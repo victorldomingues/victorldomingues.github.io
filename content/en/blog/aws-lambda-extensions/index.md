@@ -27,7 +27,7 @@ Aqui vamos propor a implementação dessa solução em .NET 6, utilizando Terraf
 
 <br/>
 
-<!--[Imagem](images/teste.jpg)-->
+![imagem](https://github.com/victorldomingues/lambda-extensions-net6/blob/main/aws-lambda-extensions.png?raw=true)
 
 <br/>
 
@@ -212,7 +212,7 @@ public class Function
 
 ## 4. Automação da Infraestrutura em terraform.
 
-Para esse exemplo vamos criar a automação atravéz do Terraform. Não se preocupe mesma automação tem equivalência para CloudFormation.
+Para esse exemplo vamos criar a automação através do Terraform. Não se preocupe mesma automação tem equivalência para CloudFormation.
 
 É necessário configurar previamente a infraestrutura da lambda criando as roles com suas respectivas permissões. 
 
