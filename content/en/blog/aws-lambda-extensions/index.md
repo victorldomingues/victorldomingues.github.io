@@ -6,8 +6,8 @@ date: 2023-04-04T22:21:42+00:00
 lastmod: 2023-04-04T22:21:42+00:00
 draft: false
 weight: 50
-images: []
-categories: ["News"]
+images: ["https://raw.githubusercontent.com/victorldomingues/lambda-extensions-net6/main/aws-lambda-extensions.png"]
+categories: ["Novidades", "Tutoriais","AWS", ".NET", "Terraform"]
 tags: ["AWS", "AWS ParameterStore", "AWS SecretsManager", "SecretsManager", "Secrets Manager", "ParameterStore", "Parameter Store" , "SystemsManager", "AWS Systems Manager", "AWS Lambda", "AWS Serverless", "Serverless", "AWS Lambda Extensions", "Lambda", "Extensions"]
 contributors: ["Victor Domingues"]
 pinned: false
