@@ -1,5 +1,5 @@
 ---
-title: "AWS-Parameters-and-Secrets-Lambda-Extension e .NET 6"
+title: "AWS Parameters and Secrets Lambda-Extension e .NET 6"
 description: "A ideia desse artigo é apresentar uma alternativa para reduzir custos e requisições feitas para os recursos AWS (Secrets e Systems Manager) e entender quais os benefícios da solução proposta. A seguir podemos entender como é possível."
 excerpt: "A ideia desse artigo é apresentar uma alternativa para reduzir custos e requisições feitas para os recursos AWS (Secrets e Systems Manager) e entender quais os benefícios da solução proposta. A seguir podemos entender como é possível."
 date: 2023-04-04T22:21:42+00:00
