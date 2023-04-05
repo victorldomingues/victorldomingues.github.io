@@ -27,7 +27,7 @@ Aqui vamos propor a implementação dessa solução em .NET 6, utilizando Terraf
 
 <br/>
 
-![imagem](https://github.com/victorldomingues/lambda-extensions-net6/blob/main/aws-lambda-extensions.png?raw=true)
+<img src="https://raw.githubusercontent.com/victorldomingues/lambda-extensions-net6/main/aws-lambda-extensions.png" title="title" alt="alt title" width="100%"/>
 
 <br/>
 
@@ -210,7 +210,7 @@ public class Function
 
 ```
 
-## 4. Automação da Infraestrutura em terraform.
+## 4. Automação da Infraestrutura em terraform
 
 Para esse exemplo vamos criar a automação através do Terraform. Não se preocupe mesma automação tem equivalência para CloudFormation.
 
@@ -243,7 +243,7 @@ locals {
 
 ```
 
-Em seguida configurar a lambda com o layer necessário para que a utilização do cachê seja bem-sucedida. As versões da layer estão disponíveis na documentação oficial: [Using Parameter Store parameters in AWS Lambda functions - AWS Systems Manager (amazon.com)](https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-integration-lambda-extensions.html)
+Em seguida configurar a lambda com o layer necessário para que a utilização do cache seja bem-sucedida. As versões da layer estão disponíveis na documentação oficial: [Using Parameter Store parameters in AWS Lambda functions - AWS Systems Manager (amazon.com)](https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-integration-lambda-extensions.html)
 
 **adicione a layer** arn:aws:lambda:sa-east-1:933737806257:layer:AWS-Parameters-and-Secrets-Lambda-Extension:4 no recurso **aws_lambda_function**
 
