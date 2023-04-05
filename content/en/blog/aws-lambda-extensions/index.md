@@ -3,7 +3,7 @@ title: "AWS-Parameters-and-Secrets-Lambda-Extension e .NET 6"
 description: "A ideia desse artigo é apresentar uma alternativa para reduzir custos e requisições feitas para os recursos AWS (Secrets e Systems Manager) e entender quais os benefícios da solução proposta. A seguir podemos entender como é possível."
 excerpt: "A ideia desse artigo é apresentar uma alternativa para reduzir custos e requisições feitas para os recursos AWS (Secrets e Systems Manager) e entender quais os benefícios da solução proposta. A seguir podemos entender como é possível."
 date: 2023-04-04T22:21:42+00:00
-lastmod: 2023-04-04T22:21:42+00:00
+lastmod: 2023-04-05T22:21:42+00:00
 draft: false
 weight: 50
 images: ["https://raw.githubusercontent.com/victorldomingues/lambda-extensions-net6/main/aws-lambda-extensions.png"]
@@ -159,7 +159,11 @@ curl --location --request GET http://localhost:2773/systemsmanager/parameters/ge
 
 ## 3. Implementação em .NET 6
 
+Devemos implementar o consumo da API do lambda layer seguindo os contratos do [tópco 2](./#2-contratos).
+
 ### 3.1 Modelos
+
+Você pode montar os modelos de resposta da API do lambda layer pelos seguintes records: 
 
 ```csharp
 public record Parameter(string Name, string Value, int Version);
@@ -168,6 +172,12 @@ public record GetSecretValueResponse(string Name, string SecretString);
 ```
 
 ### 3.2 Function.cs
+
+Nessa classe as requisições HTTP para API foram feitas utilizando o [HttpClient](https://learn.microsoft.com/pt-br/dotnet/api/system.net.http.httpclient?view=net-6.0).
+
+Também utilizei o [QueryHelpers.AddQueryString](https://learn.microsoft.com/pt-br/dotnet/api/microsoft.aspnetcore.webutilities.queryhelpers.addquerystring?view=aspnetcore-6.0) para formatar os parametros da query string.
+
+O método `BuildPath` devolve o path da URI com a query string formatada.
 
 ```csharp
 
@@ -246,7 +256,6 @@ locals {
 Em seguida configurar a lambda com o layer necessário para que a utilização do cache seja bem-sucedida. As versões da layer estão disponíveis na documentação oficial: [Using Parameter Store parameters in AWS Lambda functions - AWS Systems Manager (amazon.com)](https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-integration-lambda-extensions.html)
 
 **adicione a layer** arn:aws:lambda:sa-east-1:933737806257:layer:AWS-Parameters-and-Secrets-Lambda-Extension:4 no recurso **aws_lambda_function**
-
 
 ### 4.3 main.tf
 
