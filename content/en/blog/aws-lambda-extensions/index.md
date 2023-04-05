@@ -27,7 +27,7 @@ Aqui vamos propor a implementação dessa solução em .NET 6, utilizando Terraf
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/victorldomingues/lambda-extensions-net6/main/aws-lambda-extensions.png" title="title" alt="alt title" width="100%"/>
+<img src="https://raw.githubusercontent.com/victorldomingues/lambda-extensions-net6/main/aws-lambda-extensions.png" title="aws-lambda-extensions.png" alt="alt aws-lambda-extensions.png" width="100%"/>
 
 <br/>
 
