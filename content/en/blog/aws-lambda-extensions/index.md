@@ -27,7 +27,7 @@ Aqui vamos propor a implementação dessa solução em .NET 6, utilizando Terraf
 
 <br/>
 
-![Imagem](images/aws-parameters-and-secrets-lambda-extension.png)
+<!--[Imagem](images/teste.jpg)-->
 
 <br/>
 
