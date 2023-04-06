@@ -13,7 +13,7 @@ description = "Victor Domingues - Engenheiro de Software"
 images = ["logo_dark.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+titleHome = "LambdaBlog; Theme"
 
 ## Twitter Cards
 twitterSite = "@getdoks"
@@ -22,7 +22,7 @@ twitterCreator = "@henkverlinde"
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Person"
-schemaName = "Doks"
+schemaName = "LambdaBlog;"
 schemaAuthor = "Victor Domingues"
 schemaAuthorTwitter = ""
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/victor-domingues-b6847663/"
@@ -73,8 +73,8 @@ copyRight = "LambdaBlog; (c) 2023-Presente Victor Domingues"
 # Alert
 alert = false
 alertDismissable = true
-# alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
+# alertText = "Introducing the LambdaBlog; child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out LambdaBlog; v0.2</a>"
+alertText = "Introducing the LambdaBlog; child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out LambdaBlog; v0.2</a>"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
