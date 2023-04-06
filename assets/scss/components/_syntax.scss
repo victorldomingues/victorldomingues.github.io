@@ -60,3 +60,11 @@ Based on Ascetic by (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 [data-dark-mode] body .hljs-link {
   color: $blue-300;
 }
+
+.logo img {
+  content:url(logo.png);
+}
+
+[data-dark-mode] .logo img {
+  content:url(logo_dark_transparente.png);
+}

@@ -1,16 +1,16 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Victor Domingues"
+title = "LambdaBlog;"
 titleSeparator = "-"
-titleAddition = "Engenheiro de Software"
+titleAddition = "λ um blog para para devs"
 description = "Victor Domingues - Engenheiro de Software"
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["logo_dark.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
 titleHome = "Doks Theme"
@@ -28,10 +28,10 @@ schemaAuthorTwitter = ""
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/victor-domingues-b6847663/"
 schemaAuthorGitHub = "https://github.com/victorldomingues"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = "logo_dark.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = "doks_dark.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = ""
@@ -65,10 +65,10 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "<a class=\"text-muted\" href=\"https://www.linkedin.com/in/victor-domingues-b6847663/\">Victor Domingues</a>, Engenheiro de Software"
+footer = "LambdaBlog; por <a class=\"text-muted\" href=\"https://www.linkedin.com/in/victor-domingues-b6847663/\">Victor Domingues</a>, Engenheiro de Software"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "LambdaBlog; (c) 2023-Presente Victor Domingues"
 
 # Alert
 alert = false
