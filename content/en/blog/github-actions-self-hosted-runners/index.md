@@ -44,7 +44,7 @@ Agora vamos ver como configuramos o ambiente local e **Docker** para rodar o **G
 
 crie um arquivo `docker-compose.yml`
 
-Estamos subindo uma imagem Docker .NET 7 da AWS.
+Estamos subindo uma imagem Docker .NET 7 da AWS com o uso do SAM.
 
 ```yml
 version: "3"
@@ -78,9 +78,10 @@ Siga as instruções descritas na própria documentação e não terá erro, par
 
 **Copie exatamente os valores que o Github vai gerar automaticamente** para você. 
 
-<small>os comandos demonstrados a seguir são apenas de exemplo:</small>
+<small>Os comandos demonstrados a seguir são apenas de exemplo:</small>
 
 **Download**
+
 ```bash
 # Create a folder
 $ mkdir actions-runner && cd actions-runner# Download the latest runner package
@@ -103,7 +104,7 @@ $ ./run.sh
 runs-on: self-hosted
 ```
 
-Depois de configurado no Job do seu workflow basta informar que quer executa-lo como self-hosted 
+Depois de configurado no job do seu workflow basta informar que quer executa-lo como self-hosted 
 
 ```yml
 runs-on: self-hosted
@@ -113,7 +114,7 @@ runs-on: self-hosted
 
 > **Erros comuns no container linux**
 >
->Ao rodar o comando ./run.sh pode ocorrer o erro `Must not run interactively with sudo`.
+>Ao rodar o comando `./run.sh` pode ocorrer o erro `Must not run interactively with sudo`.
 
 ```bash
 sh-4.2# ./run.sh
