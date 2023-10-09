@@ -1,7 +1,7 @@
 ---
 title: "Como configurar Github Actions Self-Hosted Runners no Docker Local para aplicações .NET na AWS."
-description: "vamos falar um pouco sobre o Self-Hosted  Runners do Github Actions, é um recursos que permite usar uma maquina na cloud ou local para executar as actions do github."
-excerpt: "vamos falar um pouco sobre o Self-Hosted  Runners do Github Actions, é um recursos que permite usar uma maquina na cloud ou local para executar as actions do github."
+description: "vamos falar um pouco sobre o Self-Hosted  Runners do Github Actions, é um recurso que permite usar uma maquina na cloud ou local para executar as actions do github."
+excerpt: "vamos falar um pouco sobre o Self-Hosted  Runners do Github Actions, é um recurso que permite usar uma maquina na cloud ou local para executar as actions do github."
 date: 2023-04-08T22:19:39+00:00
 lastmod: 2023-04-08T19:39:42+00:00
 draft: false
@@ -14,7 +14,7 @@ pinned: false
 homepage: false
 ---
 
-Olá, muito prazer me chamo Victor e sou desenvolvedor .NET. Hoje vamos falar um pouco sobre o **Self-Hosted  Runners** do **Github Actions** que é um recursos que permite usar uma maquina na nuvem (Cloud) ou local para executar as actions do github. Você pode ver mais detalhes na documentação oficial [About self-hosted runners - GitHub Docs](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
+Olá, muito prazer me chamo Victor e sou desenvolvedor .NET. Hoje vamos falar um pouco sobre o **Self-Hosted  Runners** do **Github Actions** que é um recurso que permite usar uma maquina na nuvem (Cloud) ou local para executar as actions do github. Você pode ver mais detalhes na documentação oficial [About self-hosted runners - GitHub Docs](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
 
 No link a seguir temos o passo a passo de como configurar [Adding self-hosted runners - GitHub Docs](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners).
 
@@ -29,7 +29,7 @@ No link a seguir temos o passo a passo de como configurar [Adding self-hosted ru
 
 [Get Docker | Docker Docs](https://docs.docker.com/get-docker/)
 
-### 1.2. Instale o Docker composse
+### 1.2. Instale o Docker compose
 
 [Install the Compose plugin | Docker Docs](https://docs.docker.com/compose/install/linux/)
 
