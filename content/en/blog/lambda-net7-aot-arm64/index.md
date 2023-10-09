@@ -253,7 +253,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    # Aqui você informação a versão do .NET.
+    # Aqui você informa a versão do .NET.
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
@@ -303,11 +303,9 @@ No meu caso estou usando state file salvos em um bucket S3 na AWS.
     runs-on: ubuntu-latest
     environment: production
 
-    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
         shell: bash
-        # We keep Terraform files in the terraform directory.
         working-directory: ./infra
 
     steps:
@@ -436,11 +434,6 @@ resource "aws_lambda_function" "lambda" {
   }
 }
 
-/*
- * An alias allows us to point our
- * API gateway to a stable version of our function
- * which we can update as we want
- */
 resource "aws_lambda_alias" "lambda_alias" {
   name             = "production"
   function_name    = aws_lambda_function.lambda.arn
