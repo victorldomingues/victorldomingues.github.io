@@ -488,7 +488,7 @@ Teste direto com template AWS
 
 <img class="img-100" src="aws-03.png" />
 
-## 7. Principais Referencias
+## 7. Principais Referências
 
 [Funções do AWS Lambda viabilizadas pelo AWS Graviton2 execute suas funções no ARM e obtenha uma relação preçodesempenho até 34% melhor | O blog da AWS (amazon.com)](https://aws.amazon.com/pt/blogs/aws-brasil/funcoes-do-aws-lambda-viabilizadas-pelo-aws-graviton2-execute-suas-funcoes-no-arm-e-obtenha-uma-relacao-precodesempenho-ate-34-melhor/)
 
