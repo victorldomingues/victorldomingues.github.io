@@ -91,11 +91,11 @@ dotnet new lambda.NativeAOT -n [ProjectName] cd ./[ProjectName]/src/[ProjectName
 
 ### 2.2. Configuração do projeto
 
-Para esse exemplo vamos configurar um FunctionHandler para API Gateway
+Para esse exemplo vamos configurar um FunctionHandler para API Gateway.
 
 **No arquivo `Function.cs`**
 
-Configure a classe de serialização padrão
+Configure a classe de serialização padrão.
 
 ```csharp
 [JsonSerializable(typeof(APIGatewayHttpApiV2ProxyRequest))]
@@ -134,7 +134,7 @@ private static async Task Main()
 
 **No arquivo .csproj `[ProjectName].csproj`**
 
-Deve conter a confdiguração **PublishAOT** com `true` e configure o **Trimmer** das dependencias da sua aplicação.
+Deve conter a configuração **PublishAOT** com `true` e configure o **Trimmer** das dependências da sua aplicação.
 
 ```xml
 <ItemGroup>
@@ -168,7 +168,7 @@ Defina as propriedades com os seguintes valores:
 |function-architectue|arm64|Arquitetura|
 |function-handler|bootstrap::[ProjectName].Function::FunctionHandler|Handler da função|
 
-<small> não esqueça do trocar o ProjectName pelo nome do seu projeto. </small>
+<small> Não esqueça do trocar o ProjectName pelo nome do seu projeto. </small>
 
 ```json
 {
@@ -286,7 +286,7 @@ jobs:
 
 > **Nota: pacote bootstrap.zip**
 >
-> Para as configurações de custom runtime o pacote gerado e executado na AWS é o bootstrap.
+> Para as configurações de custom runtime o pacote gerado e executado na AWS é o bootstra.
 
 #### 4.3.2. Terraform (Deploy)
 
@@ -472,7 +472,7 @@ resource "aws_cloudwatch_log_group" "lambda_log_group" {
 
 ## 6. Resultados
 
-No github actions
+No Github Actions
 
 <img class="img-100" src="github-actions.png" />
 
