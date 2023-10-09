@@ -230,7 +230,7 @@ Os workflows são criados na pasta `.github/workflows`.
 
 #### 4.3.1.	Dotnet (Build)
 
-Nessa etapa tem um ponto de atenção para compilar a aplicação .NET 7 no modo AOT estou usando um github self hosted, no meu caso usei um container na minha própria máquina para fazer isso integrado com o github você pode ver mais detalhes no meu artigo **[Como configurar Github Actions Self-Hosted Runners no Docker Local para aplicações .NET na AWS. - LambdaBlog; (victorldomingues.github.io)](https://victorldomingues.github.io/blog/como-configurar-github-actions-self-hosted-runners-no-docker-local-para-aplica%C3%A7%C3%B5es-.net-na-aws./)**. 
+**Nessa etapa tem um ponto de atenção** para compilar a aplicação .NET 7 no modo AOT estou usando um Github Self-Hosted, no meu caso usei um container na minha própria máquina para fazer isso integrado com o Github você pode ver mais detalhes no meu artigo **[Como configurar Github Actions Self-Hosted Runners no Docker Local para aplicações .NET na AWS. - LambdaBlog; (victorldomingues.github.io)](https://victorldomingues.github.io/blog/como-configurar-github-actions-self-hosted-runners-no-docker-local-para-aplica%C3%A7%C3%B5es-.net-na-aws./)**. 
 
 Você também pode configurar uma máquina EC2 ou uma Task ECS como mostra o artigo do blog da AWS. [Custom Lambda runtimes - AWS Lambda (amazon.com)
 Escalando executores self-hosted do GitHub Actions com Amazon ECS | O blog da AWS](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html)
