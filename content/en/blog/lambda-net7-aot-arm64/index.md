@@ -91,11 +91,11 @@ dotnet new lambda.NativeAOT -n [ProjectName] cd ./[ProjectName]/src/[ProjectName
 
 ### 2.2. Configuração do projeto
 
-Para esse exemplo vamos configurar um FunctionHandler para API Gateway
+Para esse exemplo vamos configurar um FunctionHandler para API Gateway.
 
 **No arquivo `Function.cs`**
 
-Configure a classe de serialização padrão
+Configure a classe de serialização padrão.
 
 ```csharp
 [JsonSerializable(typeof(APIGatewayHttpApiV2ProxyRequest))]
@@ -134,7 +134,7 @@ private static async Task Main()
 
 **No arquivo .csproj `[ProjectName].csproj`**
 
-Deve conter a confdiguração **PublishAOT** com `true` e configure o **Trimmer** das dependencias da sua aplicação.
+Deve conter a configuração **PublishAOT** com `true` e configure o **Trimmer** das dependências da sua aplicação.
 
 ```xml
 <ItemGroup>
@@ -168,7 +168,7 @@ Defina as propriedades com os seguintes valores:
 |function-architectue|arm64|Arquitetura|
 |function-handler|bootstrap::[ProjectName].Function::FunctionHandler|Handler da função|
 
-<small> não esqueça do trocar o ProjectName pelo nome do seu projeto. </small>
+<small> Não esqueça do trocar o ProjectName pelo nome do seu projeto. </small>
 
 ```json
 {
@@ -230,7 +230,7 @@ Os workflows são criados na pasta `.github/workflows`.
 
 #### 4.3.1.	Dotnet (Build)
 
-Nessa etapa tem um ponto de atenção para compilar a aplicação .NET 7 no modo AOT estou usando um github self hosted, no meu caso usei um container na minha própria máquina para fazer isso integrado com o github você pode ver mais detalhes no meu artigo **[Como configurar Github Actions Self-Hosted Runners no Docker Local para aplicações .NET na AWS. - LambdaBlog; (victorldomingues.github.io)](https://victorldomingues.github.io/blog/como-configurar-github-actions-self-hosted-runners-no-docker-local-para-aplica%C3%A7%C3%B5es-.net-na-aws./)**. 
+**Nessa etapa tem um ponto de atenção** para compilar a aplicação .NET 7 no modo AOT estou usando um Github Self-Hosted, no meu caso usei um container na minha própria máquina para fazer isso integrado com o Github você pode ver mais detalhes no meu artigo **[Como configurar Github Actions Self-Hosted Runners no Docker Local para aplicações .NET na AWS. - LambdaBlog; (victorldomingues.github.io)](https://victorldomingues.github.io/blog/como-configurar-github-actions-self-hosted-runners-no-docker-local-para-aplica%C3%A7%C3%B5es-.net-na-aws./)**. 
 
 Você também pode configurar uma máquina EC2 ou uma Task ECS como mostra o artigo do blog da AWS. [Custom Lambda runtimes - AWS Lambda (amazon.com)
 Escalando executores self-hosted do GitHub Actions com Amazon ECS | O blog da AWS](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html)
@@ -286,7 +286,7 @@ jobs:
 
 > **Nota: pacote bootstrap.zip**
 >
-> Para as configurações de custom runtime o pacote gerado e executado na AWS é o bootstrap.
+> Para as configurações de custom runtime o pacote gerado e executado na AWS é o bootstra.
 
 #### 4.3.2. Terraform (Deploy)
 
@@ -472,7 +472,7 @@ resource "aws_cloudwatch_log_group" "lambda_log_group" {
 
 ## 6. Resultados
 
-No github actions
+No Github Actions
 
 <img class="img-100" src="github-actions.png" />
 

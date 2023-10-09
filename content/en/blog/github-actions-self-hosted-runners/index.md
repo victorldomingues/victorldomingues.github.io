@@ -20,7 +20,7 @@ No link a seguir temos o passo a passo de como configurar [Adding self-hosted ru
 
 ## Caso de uso
 
-> **Caso de uso**: Imagine que você precise executar o build de uma aplicação que necessite de **configurações bem especificas** que os runners padrão do Github não atende ou que você tenha uma imagem Docker pré-configurada com tudo que você precisa para rodar os steps de build até mesmo em casos que você tenha limitações de arquitetura de CPU em seu ambiente de desenvolvimento local. <br/> <br/> Para esse caso de uso vamos considerar usar um runner com a imagem base para .NET 7 da AWS em arquitetura ARM64 com dependencia do Serverless Appllication Model [(SAM)](https://docs.aws.amazon.com/pt_br/serverless-application-model/latest/developerguide/what-is-sam.html) para executar a lambda na mesma arquitetura.
+> **Caso de uso**: Imagine que você precise executar o build de uma aplicação que necessite de **configurações bem especificas** que os runners padrão do Github não atende ou que você tenha uma imagem Docker pré-configurada com tudo que você precisa para rodar os steps de build até mesmo em casos que você tenha limitações de arquitetura de CPU em seu ambiente de desenvolvimento local. <br/> <br/> Para esse caso de uso vamos considerar usar um runner com a imagem base para .NET 7 da AWS em arquitetura ARM64 com dependência do Serverless Appllication Model [(SAM)](https://docs.aws.amazon.com/pt_br/serverless-application-model/latest/developerguide/what-is-sam.html) para executar a lambda na mesma arquitetura.
 
 
 ## 1. Ambiente
@@ -74,7 +74,7 @@ Para esse exemplo configurei um Linux na arquitetura ARM64
 
 ### 2.3 Configurando o container
 
-Siga as instruções descritas na própria documentação e não terá erro, para esse caso que estamos rodando em um container Docker precisamos acessar o bash do container e executar os comandos para configurar e executar os serviços do github
+Siga as instruções descritas na própria documentação e não terá erro, para esse caso que estamos rodando em um container Docker precisamos acessar o bash do container e executar os comandos para configurar e executar os serviços do Github.
 
 **Copie exatamente os valores que o Github vai gerar automaticamente** para você. 
 
